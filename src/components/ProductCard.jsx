@@ -30,7 +30,7 @@ const ProductCard = ({ product }) => {
 	};
 
 	return (
-		<article className='group overflow-hidden rounded-2xl border border-white/10 bg-white/[0.035] p-3 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.05] cursor-pointer'>
+		<article className='group overflow-hidden rounded-2xl border border-white/10 bg-white/[0.035] p-3 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/5 cursor-pointer'>
 			{/* Product Image */}
 			<div className='relative overflow-hidden rounded-xl bg-zinc-900'>
 				<img
@@ -65,17 +65,17 @@ const ProductCard = ({ product }) => {
 							type='button'
 							onClick={handleAddToCart}
 							aria-label={`Add ${product.title} to cart`}
-							className='flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-white/10 bg-white/[0.05] text-zinc-300 transition hover:border-violet-400/30 hover:bg-violet-500/10 hover:text-violet-300 cursor-pointer'
+							className='flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-zinc-300 transition hover:border-violet-400/30 hover:bg-violet-500/10 hover:text-violet-300 cursor-pointer'
 						>
 							<ShoppingCart size={16} />
 						</button>
 					) : (
-						<div className='flex h-9 items-center overflow-hidden rounded-lg border border-white/10 bg-white/[0.05]'>
+						<div className='flex h-9 items-center overflow-hidden rounded-lg border border-white/10 bg-white/5'>
 							<button
 								type='button'
 								onClick={handleDecrease}
 								aria-label={`Decrease ${product.title} quantity`}
-								className='flex h-full w-9 items-center justify-center text-zinc-400 transition hover:bg-white/[0.06] hover:text-white cursor-pointer'
+								className='flex h-full w-9 items-center justify-center text-zinc-400 transition hover:bg-white/6 hover:text-white cursor-pointer'
 							>
 								<Minus size={14} />
 							</button>
@@ -88,7 +88,7 @@ const ProductCard = ({ product }) => {
 								type='button'
 								onClick={handleIncrease}
 								aria-label={`Increase ${product.title} quantity`}
-								className='flex h-full w-9 items-center justify-center text-zinc-400 transition hover:bg-white/[0.06] hover:text-white cursor-pointer'
+								className='flex h-full w-9 items-center justify-center text-zinc-400 transition hover:bg-white/6 hover:text-white cursor-pointer'
 							>
 								<Plus size={14} />
 							</button>

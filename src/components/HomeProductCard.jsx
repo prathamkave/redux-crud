@@ -2,7 +2,7 @@ import React from "react";
 
 const HomeProductCard = ({ product }) => {
 	return (
-		<div className='w-[180px] rounded-[22px] border border-white/15 bg-white/[0.06] p-2.5 shadow-2xl shadow-black/40 backdrop-blur-xl sm:w-[195px]'>
+		<div className='w-45 rounded-[22px] border border-white/15 bg-white/6 p-2.5 shadow-2xl shadow-black/40 backdrop-blur-xl sm:w-48.75'>
 			<div className='overflow-hidden rounded-[17px] bg-zinc-900'>
 				<img
 					src={product.image}

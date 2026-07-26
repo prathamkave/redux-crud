@@ -42,8 +42,8 @@ const Cart = () => {
 
 			{/* Empty Cart */}
 			{items.length === 0 && (
-				<section className='flex min-h-[420px] flex-col items-center justify-center rounded-3xl border border-white/10 bg-white/[0.035] px-6 text-center backdrop-blur-xl'>
-					<div className='flex h-16 w-16 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.04]'>
+				<section className='flex min-h-105 flex-col items-center justify-center rounded-3xl border border-white/10 bg-white/[0.035] px-6 text-center backdrop-blur-xl'>
+					<div className='flex h-16 w-16 items-center justify-center rounded-2xl border border-white/10 bg-white/4'>
 						<ShoppingBag
 							size={28}
 							className='text-zinc-500'

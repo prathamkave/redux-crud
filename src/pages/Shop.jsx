@@ -40,8 +40,8 @@ const Shop = () => {
 
 			{/* Loading */}
 			{status === "loading" && (
-				<div className='flex min-h-[400px] flex-col items-center justify-center'>
-					<div className='flex h-12 w-12 items-center justify-center rounded-xl border border-white/10 bg-white/[0.04]'>
+				<div className='flex min-h-100 flex-col items-center justify-center'>
+					<div className='flex h-12 w-12 items-center justify-center rounded-xl border border-white/10 bg-white/4'>
 						<LoaderCircle
 							size={22}
 							className='animate-spin text-violet-400'
@@ -54,8 +54,8 @@ const Shop = () => {
 
 			{/* Error */}
 			{status === "failed" && (
-				<div className='flex min-h-[400px] flex-col items-center justify-center text-center'>
-					<div className='flex h-12 w-12 items-center justify-center rounded-xl border border-red-400/10 bg-red-400/[0.05]'>
+				<div className='flex min-h-100 flex-col items-center justify-center text-center'>
+					<div className='flex h-12 w-12 items-center justify-center rounded-xl border border-red-400/10 bg-red-400/5'>
 						<AlertCircle
 							size={22}
 							className='text-red-400'
@@ -73,7 +73,7 @@ const Shop = () => {
 					<button
 						type='button'
 						onClick={() => dispatch(fetchProducts())}
-						className='mt-5 rounded-lg border border-white/10 bg-white/[0.05] px-4 py-2 text-sm font-medium text-zinc-200 transition hover:bg-white/[0.08]'
+						className='mt-5 rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-zinc-200 transition hover:bg-white/8'
 					>
 						Try again
 					</button>
@@ -82,7 +82,7 @@ const Shop = () => {
 
 			{/* Empty */}
 			{status === "succeeded" && products.length === 0 && (
-				<div className='flex min-h-[400px] flex-col items-center justify-center text-center'>
+				<div className='flex min-h-100 flex-col items-center justify-center text-center'>
 					<PackageSearch
 						size={32}
 						className='text-zinc-600'

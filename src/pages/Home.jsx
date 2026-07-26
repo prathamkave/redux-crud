@@ -46,13 +46,13 @@ const Home = () => {
 	return (
 		<main className='overflow-hidden'>
 			<section className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
-				<div className='grid min-h-[620px] items-center lg:grid-cols-[0.95fr_1.05fr]'>
+				<div className='grid min-h-155 items-center lg:grid-cols-[0.95fr_1.05fr]'>
 					{/* ================= LEFT ================= */}
 
-					<div className='relative z-30 max-w-[620px]'>
+					<div className='relative z-30 max-w-155'>
 						{/* Small Label */}
 
-						<div className='mb-7 inline-flex items-center gap-2 rounded-full border border-violet-400/50 bg-violet-500/[0.04] px-4 py-2'>
+						<div className='mb-7 inline-flex items-center gap-2 rounded-full border border-violet-400/50 bg-violet-500/4 px-4 py-2'>
 							<Sparkles
 								size={15}
 								className='text-violet-400'
@@ -74,7 +74,7 @@ const Home = () => {
 
 						{/* Description */}
 
-						<p className='mt-7 max-w-[560px] text-base leading-7 text-zinc-500 sm:text-lg'>
+						<p className='mt-7 max-w-140 text-base leading-7 text-zinc-500 sm:text-lg'>
 							Discover everyday products across tech, fashion, home, sports, and
 							more — curated for simple shopping.
 						</p>
@@ -100,7 +100,7 @@ const Home = () => {
 
 					{/* ================= RIGHT SHOWCASE ================= */}
 
-					<div className='relative h-[570px] w-full'>
+					<div className='relative h-142.5 w-full'>
 						{/* ================= HEADPHONES ================= */}
 
 						<div className='absolute left-[23%] top-[3%] z-20 rotate-[-5deg]'>

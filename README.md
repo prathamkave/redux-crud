@@ -1,12 +1,84 @@
-# React + Vite
+# Nexora — Redux Toolkit E-Commerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern dark-themed e-commerce app built to practice **Redux Toolkit with a real-world shopping flow** instead of a basic CRUD project.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React + Vite
+- Redux Toolkit
+- React Router
+- Axios
+- Tailwind CSS
+- Lucide React
+- EscuelaJS API
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Modern dark + subtle glassmorphism UI
+- Home, Shop & Cart pages
+- Products fetched using Axios
+- 16-product limit
+- Add products to cart
+- Increase / decrease quantity
+- Automatically remove when quantity reaches `0`
+- Unique product count in navbar
+- Dynamic subtotal, shipping, tax & total
+- Reusable React components
+- Centralized cart & product state with Redux Toolkit
+
+## Project Structure
+
+```text
+src/
+├── api/
+├── components/
+│   ├── cart/
+│   ├── home/
+│   └── shop/
+├── pages/
+├── redux/
+│   ├── store.js
+│   ├── productSlice.js
+│   └── cartSlice.js
+├── App.jsx
+└── main.jsx
+```
+
+## Getting Started
+
+```bash
+git clone <your-repository-url>
+cd nexora
+npm install
+npm run dev
+```
+
+## Main Redux Flow
+
+```text
+API → Axios → Product Slice → Redux Store
+                              ↓
+                         Shop / Cart
+                              ↓
+                       Cart Slice
+                              ↓
+                    Navbar + Order Summary
+```
+
+## Learning Focus
+
+This project helped practice:
+
+- Redux Toolkit & slices
+- Global state management
+- `useSelector` & `useDispatch`
+- API integration with Axios
+- React Router
+- Reusable components
+- Derived state
+- Cart CRUD operations
+- Responsive Tailwind UI
+
+## Author
+
+## Pratham Kave
